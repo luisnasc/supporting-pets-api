@@ -36,6 +36,6 @@ public class Donation {
 	private Animal animal;
 	
     @ManyToOne
-    @JoinColumn(name = "idPerson")	
+    @JoinColumn(name = "idPerson")
 	private Person person;
 }

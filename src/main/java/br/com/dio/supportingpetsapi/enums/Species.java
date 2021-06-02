@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum Species {
 
-	DOG("Dog"), RABITT("Rabitt"), CAT("Cat");
+	DOG("Dog"), RABBIT("Rabbit"), CAT("Cat");
 	
 	private final String name;
 }
