@@ -33,7 +33,7 @@ public class Animal {
 	private Long idAnimal;
 	
 	@Column(nullable = false)
-	private String nome;
+	private String name;
 	
 	@Column(nullable = false)
 	private int age;
@@ -46,7 +46,7 @@ public class Animal {
 	private String problem;
 	
 	@ManyToOne
-	@JoinColumn(name = "idPerson")	
+	@JoinColumn(name = "idPerson")
 	private Person person;
 	
 	@OneToMany(mappedBy = "animal", fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
