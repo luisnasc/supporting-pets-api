@@ -2,10 +2,12 @@ package br.com.dio.supportingpetsapi.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -47,6 +49,6 @@ public class Animal {
 	@JoinColumn(name = "idPerson")	
 	private Person person;
 	
-	@OneToMany(mappedBy = "animal")
+	@OneToMany(mappedBy = "animal", fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
 	private List<Donation> donations;
 }
