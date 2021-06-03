@@ -34,6 +34,13 @@ public class AnimalController {
 		return animalService.findAll();
 	}
 	
+	
+	@PostMapping
+	@ResponseStatus(value = HttpStatus.CREATED)
+	public MessageResponseDTO createAnimal(@RequestBody @Valid AnimalDTO animalDTO) {
+		return animalService.createAnimal(animalDTO);
+	}
+	
 	@GetMapping("/{id}")
 	public AnimalDTO findById(@PathVariable Long id) throws AnimalNotFoundException {
 		return animalService.findById(id);
@@ -50,9 +57,4 @@ public class AnimalController {
 		animalService.delete(id);
 	}
 	
-	@PostMapping
-	@ResponseStatus(value = HttpStatus.CREATED)
-	public MessageResponseDTO createAnimal(@RequestBody @Valid AnimalDTO animalDTO) {
-		return animalService.createAnimal(animalDTO);
-	}
 }
