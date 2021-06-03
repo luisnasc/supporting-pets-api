@@ -41,4 +41,5 @@ public class AnimalDTO {
 	
 	@Valid
 	private List<Donation> donations;
+
 }
