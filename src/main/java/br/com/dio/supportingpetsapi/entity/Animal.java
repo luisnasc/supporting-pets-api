@@ -15,6 +15,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import br.com.dio.supportingpetsapi.enums.Species;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -50,5 +52,6 @@ public class Animal {
 	private Person person;
 	
 	@OneToMany(mappedBy = "animal", fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+	@JsonIgnore
 	private List<Donation> donations;
 }

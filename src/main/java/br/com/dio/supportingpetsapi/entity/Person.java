@@ -50,6 +50,7 @@ public class Person {
 	private List<Animal> animals;
 	
 	@OneToMany(mappedBy = "person", fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+	@JsonIgnore
 	private List<Donation> donations;
 
 }
