@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import br.com.dio.supportingpetsapi.dto.MessageResponseDTO;
-import br.com.dio.supportingpetsapi.dto.PersonDTO;
+import br.com.dio.supportingpetsapi.dto.request.PersonDTO;
 import br.com.dio.supportingpetsapi.entity.Person;
 import br.com.dio.supportingpetsapi.exception.PersonNotFoundException;
 import br.com.dio.supportingpetsapi.mapper.PersonMapper;

@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.dio.supportingpetsapi.dto.AnimalDTO;
 import br.com.dio.supportingpetsapi.dto.MessageResponseDTO;
+import br.com.dio.supportingpetsapi.dto.request.AnimalDTO;
 import br.com.dio.supportingpetsapi.exception.AnimalNotFoundException;
 import br.com.dio.supportingpetsapi.service.AnimalService;
 import lombok.AllArgsConstructor;

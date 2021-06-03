@@ -6,8 +6,9 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
-import br.com.dio.supportingpetsapi.dto.AnimalDTO;
+
 import br.com.dio.supportingpetsapi.dto.MessageResponseDTO;
+import br.com.dio.supportingpetsapi.dto.request.AnimalDTO;
 import br.com.dio.supportingpetsapi.entity.Animal;
 import br.com.dio.supportingpetsapi.exception.AnimalNotFoundException;
 import br.com.dio.supportingpetsapi.mapper.AnimalMapper;

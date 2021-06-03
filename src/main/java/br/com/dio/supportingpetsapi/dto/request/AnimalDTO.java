@@ -1,4 +1,4 @@
-package br.com.dio.supportingpetsapi.dto;
+package br.com.dio.supportingpetsapi.dto.request;
 
 import java.util.List;
 

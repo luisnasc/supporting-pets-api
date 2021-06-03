@@ -4,7 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-import br.com.dio.supportingpetsapi.dto.PersonDTO;
+import br.com.dio.supportingpetsapi.dto.request.PersonDTO;
 import br.com.dio.supportingpetsapi.entity.Person;
 
 

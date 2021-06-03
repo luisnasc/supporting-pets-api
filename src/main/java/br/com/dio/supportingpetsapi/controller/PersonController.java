@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.dio.supportingpetsapi.dto.MessageResponseDTO;
-import br.com.dio.supportingpetsapi.dto.PersonDTO;
+import br.com.dio.supportingpetsapi.dto.request.PersonDTO;
 import br.com.dio.supportingpetsapi.exception.PersonNotFoundException;
 import br.com.dio.supportingpetsapi.service.PersonService;
 import lombok.AllArgsConstructor;
