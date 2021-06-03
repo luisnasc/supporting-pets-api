@@ -29,9 +29,18 @@ The system is also available online through the Heroku platform:
 https://supporting-pets.herokuapp.com
 ```
 
+Using this API you are able to:
+- Find all people, animals or donations
+- Find by ID
+- Create new records
+- Update and delete records by ID.
+
+
 # Entity-Relationship Diagram 
 
 The diagram below illustrates the entities of the system and their relationships.
 
 <center><img src="https://i.ibb.co/82KmgDh/er-diagram.png"></center>
 
+
+A person can donate to many animals, and an animal can receive many donations. Besides, a person can register many pets (Animal) to receive donations.
